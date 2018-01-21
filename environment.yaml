@@ -1,21 +1,10 @@
-# Dogs vs Cats
-
-## 项目说明
-使用深度学习方法识别一张图片是猫还是狗
-- 输入：一张彩色图片
-- 输出：是猫还是狗
-
-## 数据来源
-此数据集从kaggle上下载。[Dogs vs Cats](https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition)
-
-## 环境配置
-CPU：Intel i7-8700k
-显卡：GTX1070ti 8g
-RAM：32G
-Disk:512 ssd
-System: Ubuntu 18.04 LTS
-
-## 开发环境
+name: ten
+channels:
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - defaults
 dependencies:
   - pydotplus=2.0.2=py36_0
   - _ipyw_jlab_nb_ext_conf=0.1.0=py36he11e457_0
@@ -284,11 +273,5 @@ dependencies:
     - tensorflow-gpu==1.8.0
     - termcolor==1.1.0
     - tqdm==4.23.2
-    
-## 运行情况
-运行时间：
-1. 特征提取大约3分钟
-2. 利用特征训练模型大约3秒
-
-运行截图：详见dog_notebook.html...
+prefix: /home/mj/.conda/envs/ten
 
